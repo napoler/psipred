@@ -238,7 +238,7 @@ predict(int argc, char **argv)
 int             getmtx(FILE *lfil)
 {
     int             aa, i, j, naa;
-    char            buf[256], *p;
+    char            buf[512], *p;
     
     if (fscanf(lfil, "%d", &naa) != 1)
 	fail("Bad mtx file - no sequence length!");
